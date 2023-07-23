@@ -1,0 +1,120 @@
+/* @import 'tailwind-scrollbar'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ @import url('https://fonts.googleapis.com/css2?family=Montez&family=Poppins:ital,wght@0,400;0,500;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Poppins:ital,wght@0,100;0,400;0,500;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap');
+.Heading{
+    font-family: 'Montez', cursive;
+    line-height: 1; 
+}
+.Para{
+    font-family: 'Poppins', sans-serif;
+} 
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+@keyframes pulseBorder {
+  0% {
+    box-shadow: 0px 0px 0px black;
+  }
+  50% {
+    box-shadow: 0px 0px 20px black;
+  }
+  100% {
+    box-shadow: 0px 0px 0px bla;
+  }
+}
+
+.song-image-container {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.pulsating-border {
+  animation: pulseBorder 2s infinite;
+}
+
+.scaling-image {
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.scaling-image.active {
+  transform: scale(1.1);
+}
+
+
+.UserInfo {
+  background: #ffffff0f;
+  border-radius: 16px;
+  box-shadow: inset 0px 0px 6px black;
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+}
+@keyframes fadeInAndRotate {
+  0% {
+    opacity: 0;
+    transform: scale(2.2)  rotate(0deg);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+  transform:scale(2.2) (0deg);
+}
+
+.fade-enter-active {
+  animation: fadeInAndRotate 0.8s linear;
+  animation-fill-mode: forwards;
+}
+
+.load-enter{
+  opacity: 0;
+}
+.load-enter-active{
+  opacity: 0.6;
+  transition: opacity 0.8s;
+}
+
+.font-montez-semibold {
+  font-family: 'Montez', cursive;
+}
+
+
+.custom-loader {
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:conic-gradient(#0000 10%,#766DF4);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation:s3 1s infinite linear;
+}
+@keyframes s3 {to{transform: rotate(1turn)}}
+
+
+
+
