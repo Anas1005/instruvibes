@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/instruvibes/static/css/main.01c92fd7.css",
-    "main.js": "/instruvibes/static/js/main.6594291f.js",
+    "main.js": "/instruvibes/static/js/main.fc40699f.js",
     "static/media/Mountt.png": "/instruvibes/static/media/Mountt.5857b832eef6db208055.png",
     "static/media/AppBG.png": "/instruvibes/static/media/AppBG.5737754dc043bc595c56.png",
     "index.html": "/instruvibes/index.html",
     "main.01c92fd7.css.map": "/instruvibes/static/css/main.01c92fd7.css.map",
-    "main.6594291f.js.map": "/instruvibes/static/js/main.6594291f.js.map"
+    "main.fc40699f.js.map": "/instruvibes/static/js/main.fc40699f.js.map"
   },
   "entrypoints": [
     "static/css/main.01c92fd7.css",
-    "static/js/main.6594291f.js"
+    "static/js/main.fc40699f.js"
   ]
 }
