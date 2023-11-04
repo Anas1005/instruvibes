@@ -1,11 +1,12 @@
 import React, { createContext, useState, useEffect } from "react";
-import API_KEy from '../API_key/apikey';
 
 
 
 export const AppContext = createContext();
 
 export default function AppContextProvider({ children }) {
+
+  const API_KEy = "AIzaSyCL97bVaqWxa3mze89FRf6Fw7vyiHnQg3g";
  
   // Recommended Songs disaplyed on Home Page....
   const recommendedSongs = [
