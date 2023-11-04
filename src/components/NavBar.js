@@ -88,7 +88,7 @@ function NavBar() {
           <ul className="flex space-x-6">
             <li>
               <NavLink
-                to="/instruvibes"
+                to="/"
                 className={` text-white  hover:transition-all hover:text-[#E55857] ${
                   isActiveRoute("/") ? "text-[#EF5350]" : ""
                 }`}
@@ -164,7 +164,7 @@ function NavBar() {
               <div className="h-[1px] my-2 bg-richblack-100 w-3/4 mx-auto"></div>
 
 
-              <Link to={"/instruvibes"} onClick={() => setIsMenuModalOpen(false)}>
+              <Link to={"/"} onClick={() => setIsMenuModalOpen(false)}>
                 <div className={`flex gap-x-2 items-center w-full py-2 px-3 transition-all duration-500  ${isActiveRoute("/instruvibes") ? "text-[#EF5350]" : "" }`}>
                   <RiHome2Line className="text-lg" />
                   Home

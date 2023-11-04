@@ -51,7 +51,7 @@ function App() {
     <div className="bg-[url('AppBG.png')] bg-contain w-[100vw] h-[100vh] relative overflow-x-hidden overflow-y-auto scrollbar-thin scrollbar-thumb-[#424242] scrollbar-track-gray-[#181818] scrollbar-w">
     <NavBar/>
    <Routes>
-   <Route path="/instruvibes" element={<Home/>}/>
+   <Route path="/" element={<Home/>}/>
   <Route path="/listen/:searchQuery" element={<Listen/>}/>
   <Route path="/about" element={<About/>}/>
   <Route path="/contact" element={<Contact/>}/>
